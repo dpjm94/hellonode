@@ -1,5 +1,5 @@
 # use a node base image
-FROM tomcat
+FROM tomcat:latest
 
 # set maintainer
 LABEL maintainer "dpjm94@live.ie"
