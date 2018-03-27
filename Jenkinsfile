@@ -9,7 +9,7 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-        docker.build("getintodevops/hellonode")
+        //docker.build("getintodevops/hellonode")
         sh 'echo "Build passed"' 
     }
 
