@@ -4,6 +4,12 @@ FROM node:7
 # set maintainer
 LABEL maintainer "dpjm94@live.ie"
 
+run mkdir -p /app
+
+WORKDIR /app
+
+COPY hello-node-app/*/ app/
+
 # set a health check
 HEALTHCHECK --interval=5s \
             --timeout=5s \
@@ -11,3 +17,5 @@ HEALTHCHECK --interval=5s \
 
 # tell docker what port to expose
 EXPOSE 8000
+
+CMD npm start
