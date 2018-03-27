@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        docker.ps
+        docker ps
     }
 
     stage('Test image') {
