@@ -1,5 +1,5 @@
 # use a node base image
-FROM node:7
+FROM hello-world
 
 # set maintainer
 LABEL maintainer "dpjm94@live.ie"
