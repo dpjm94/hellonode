@@ -4,11 +4,11 @@ FROM hello-world
 # set maintainer
 LABEL maintainer "dpjm94@live.ie"
 
-run mkdir -p /app
+run mkdir -p /workspace
 
-WORKDIR /app
+WORKDIR /workspace
 
-COPY hello-node-app/*/ app/
+COPY hello-node-app/*/ workspace/
 
 # set a health check
 HEALTHCHECK --interval=5s \
